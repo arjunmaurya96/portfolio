@@ -38,42 +38,140 @@ const SKILLS = {
 
 const EXPERIENCES = [
   {
-    company: "TechCorp Solutions", role: "Senior MERN Stack Developer",
-    period: "Jan 2022 – Present", location: "Remote (India)", type: "Full-time",
+    company: "Sequence Cloud Gateway Pvt Ltd",
+    role: "Web Developer",
+    period: "2026 - Present",
+    location: "India",
+    type: "Full-time",
     color: "blue",
     achievements: [
-      "Architected 3 large-scale SaaS applications serving 50,000+ monthly active users",
-      "Reduced API response time by 40% via Redis caching and query optimization",
-      "Led a team of 5 developers using Agile/Scrum — delivered 100% of sprints on time",
-      "Implemented CI/CD pipelines (GitHub Actions + Docker) cutting deploy time by 60%",
+      "Managing and developing company-wide React JS projects",
+      "Built modern and responsive UI/UX interfaces for web applications",
+      "Created scalable frontend architecture for multiple projects",
+      "Optimized application performance for better user experience",
+      "Handled project ownership and delivered production-ready solutions"
     ],
-    tech: ["React", "Node.js", "MongoDB", "AWS", "Docker", "Redis"],
+    tech: [
+      "React.js",
+      "JavaScript",
+      "Bootstrap",
+      "Responsive Design",
+      "UI/UX",
+      "Performance Optimization"
+    ],
   },
   {
-    company: "Digital Pixel Agency", role: "Full Stack Developer",
-    period: "Mar 2020 – Dec 2021", location: "Hybrid (India)", type: "Full-time",
+    company: "Bizclock Pvt. Ltd. Company",
+    role: "Full Stack Developer",
+    period: "2025",
+    location: "India",
+    type: "Full-time",
     color: "purple",
     achievements: [
-      "Delivered 15+ client web applications from wireframe to production",
-      "Built real-time chat platform with Socket.io handling 10,000+ concurrent users",
-      "Integrated Stripe & Razorpay payment gateways for multiple e-commerce platforms",
-      "Boosted Core Web Vitals scores by 55% through code splitting and lazy loading",
+      "Integrated backend APIs into frontend applications for seamless data flow",
+      "Improved existing UI components for better user experience and responsiveness",
+      "Built reusable React components to speed up development",
+      "Worked on API development and backend functionality when required",
+      "Collaborated with team members to optimize application performance",
+      "Fixed bugs and enhanced overall application functionality"
     ],
-    tech: ["React", "Express", "MongoDB", "Socket.io", "Stripe", "Razorpay"],
+    tech: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST APIs",
+      "Bootstrap"
+    ],
   },
   {
-    company: "StartupNest", role: "Junior Full Stack Developer",
-    period: "Jun 2019 – Feb 2020", location: "On-site (India)", type: "Full-time",
+    company: "Nickicon Pvt Ltd",
+    role: "UI/UX Designer & MERN Stack Intern",
+    period: "3 Months Internship",
+    location: "India",
+    type: "Internship",
     color: "green",
     achievements: [
-      "Built RESTful APIs powering iOS/Android and web clients simultaneously",
-      "Developed 30+ reusable React components used across 5 different products",
-      "Optimized MongoDB schema design reducing query complexity by 35%",
-      "Maintained 95% unit test coverage across all Node.js services",
+      "Completed internship focused on MERN Stack development",
+      "Designed and developed small-scale web pages",
+      "Improved company website interface",
+      "Built responsive layouts",
+      "Integrated frontend with backend APIs",
+      "Optimized user experience"
     ],
-    tech: ["React", "Node.js", "MongoDB", "Bootstrap", "Jest", "REST APIs"],
+    tech: [
+      "React.js",
+      "Node.js",
+      "MongoDB",
+      "Express.js",
+      "UI/UX",
+      "Responsive Design"
+    ],
+  },
+  {
+    company: "Ducat Institute",
+    role: "MERN Stack Trainee",
+    period: "6 Months Training",
+    location: "India",
+    type: "Training Program",
+    color: "orange",
+    achievements: [
+      "Completed 6 months intensive MERN Stack training program",
+      "Built full-stack web applications using React.js, Node.js, Express.js, and MongoDB",
+      "Learned REST API development and database integration",
+      "Worked on authentication systems using JWT",
+      "Built responsive frontend interfaces and backend integrations",
+      "Created multiple practice projects to strengthen full stack development skills"
+    ],
+    tech: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JavaScript",
+      "REST APIs"
+    ],
   },
 ];
+
+// const EXPERIENCES = [
+//   {
+//     company: "TechCorp Solutions", role: "Senior MERN Stack Developer",
+//     period: "Jan 2022 – Present", location: "Remote (India)", type: "Full-time",
+//     color: "blue",
+//     achievements: [
+//       "Architected 3 large-scale SaaS applications serving 50,000+ monthly active users",
+//       "Reduced API response time by 40% via Redis caching and query optimization",
+//       "Led a team of 5 developers using Agile/Scrum — delivered 100% of sprints on time",
+//       "Implemented CI/CD pipelines (GitHub Actions + Docker) cutting deploy time by 60%",
+//     ],
+//     tech: ["React", "Node.js", "MongoDB", "AWS", "Docker", "Redis"],
+//   },
+//   {
+//     company: "Digital Pixel Agency", role: "Full Stack Developer",
+//     period: "Mar 2020 – Dec 2021", location: "Hybrid (India)", type: "Full-time",
+//     color: "purple",
+//     achievements: [
+//       "Delivered 15+ client web applications from wireframe to production",
+//       "Built real-time chat platform with Socket.io handling 10,000+ concurrent users",
+//       "Integrated Stripe & Razorpay payment gateways for multiple e-commerce platforms",
+//       "Boosted Core Web Vitals scores by 55% through code splitting and lazy loading",
+//     ],
+//     tech: ["React", "Express", "MongoDB", "Socket.io", "Stripe", "Razorpay"],
+//   },
+//   {
+//     company: "StartupNest", role: "Junior Full Stack Developer",
+//     period: "Jun 2019 – Feb 2020", location: "On-site (India)", type: "Full-time",
+//     color: "green",
+//     achievements: [
+//       "Built RESTful APIs powering iOS/Android and web clients simultaneously",
+//       "Developed 30+ reusable React components used across 5 different products",
+//       "Optimized MongoDB schema design reducing query complexity by 35%",
+//       "Maintained 95% unit test coverage across all Node.js services",
+//     ],
+//     tech: ["React", "Node.js", "MongoDB", "Bootstrap", "Jest", "REST APIs"],
+//   },
+// ];
 
 const PROJECTS = [
   {
@@ -151,9 +249,9 @@ const EDUCATION = [
 ];
 
 const SOCIALS = [
-  { name: "GitHub", href: "https://github.com", label: "github.com/arjundev" },
-  { name: "LinkedIn", href: "https://linkedin.com", label: "linkedin.com/in/arjundev" },
-  { name: "Twitter", href: "https://twitter.com", label: "@arjundev" },
+  { name: "GitHub", href: "https://github.com/arjunmaurya96", label: "https://github.com/arjunmaurya96" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/arjun-maurya-8365a3280/", label: "https://www.linkedin.com/in/arjun-maurya-8365a3280/" },
+  { name: "Instagram", href: "https://www.instagram.com/arjun_high_level_programmer?igsh=MXFvdmVvdmh5bnR4aA==", label: "https://www.instagram.com/arjun_high_level_programmer?igsh=MXFvdmVvdmh5bnR4aA==" },
 ];
 
 // ═══════════════════════════════════════════════
@@ -585,10 +683,10 @@ function AboutSection({ tc, isDark }) {
             {/* Stats grid */}
             <div className="grid grid-cols-2 gap-4">
               {[
-                { num: "5+", label: "Years Experience", icon: "📅" },
+                { num: "1.5+", label: "Years Experience", icon: "📅" },
                 { num: "50+", label: "Projects Completed", icon: "🚀" },
                 { num: "20+", label: "Happy Clients", icon: "🤝" },
-                { num: "10M+", label: "Users Served", icon: "👥" },
+                { num: "1k+", label: "Users Served", icon: "👥" },
               ].map(s => (
                 <div key={s.label} className="rounded-2xl p-5 text-center transition-all hover:scale-105"
                   style={{ ...cardStyle, boxShadow: `0 4px 20px ${tc.glow}20` }}>
@@ -691,7 +789,7 @@ function SkillsSection({ tc, isDark }) {
             Full Tech Stack
           </p>
           <div className="flex flex-wrap justify-center gap-2">
-            {["React", "Next.js", "Node.js", "Express", "MongoDB", "PostgreSQL", "Redis", "TypeScript", "Docker", "AWS", "GraphQL", "Socket.io", "Tailwind", "Git", "Vercel", "Figma"].map(t => (
+            {["Html", "Css", "JavaScript", "Bootstrap", "React", "Next.js", "Node.js", "Expressjs", "MongoDB", "AWS", "Socket.io", "Tailwind", "Git", "Vercel"].map(t => (
               <span key={t} className="mono-font text-xs px-3 py-1.5 rounded-lg transition-all hover:scale-105"
                 style={{
                   background: isDark ? "rgba(255,255,255,0.05)" : "rgba(0,0,0,0.04)",
@@ -991,36 +1089,36 @@ function TestimonialsSection({ tc, isDark }) {
 // ═══════════════════════════════════════════════
 // CERTIFICATIONS SECTION
 // ═══════════════════════════════════════════════
-function CertificationsSection({ tc, isDark }) {
-  const cardStyle = { background: isDark ? "rgba(15,23,42,0.8)" : "rgba(255,255,255,0.8)", border: `1px solid ${isDark ? "#1e293b" : "#e2e8f0"}`, backdropFilter: "blur(12px)" };
-  return (
-    <section id="certifications" className="py-24 px-4 sm:px-6"
-      style={{ background: isDark ? "rgba(5,5,15,0.5)" : "rgba(248,250,252,0.8)" }}>
-      <div className="max-w-7xl mx-auto">
-        <SectionTitle label="My Credentials" title="CERTIFICATIONS"
-          subtitle="Industry-recognised certifications validating my expertise"
-          tc={tc} isDark={isDark} />
+// function CertificationsSection({ tc, isDark }) {
+//   const cardStyle = { background: isDark ? "rgba(15,23,42,0.8)" : "rgba(255,255,255,0.8)", border: `1px solid ${isDark ? "#1e293b" : "#e2e8f0"}`, backdropFilter: "blur(12px)" };
+//   return (
+//     <section id="certifications" className="py-24 px-4 sm:px-6"
+//       style={{ background: isDark ? "rgba(5,5,15,0.5)" : "rgba(248,250,252,0.8)" }}>
+//       <div className="max-w-7xl mx-auto">
+//         <SectionTitle label="My Credentials" title="CERTIFICATIONS"
+//           subtitle="Industry-recognised certifications validating my expertise"
+//           tc={tc} isDark={isDark} />
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {CERTS.map((c, i) => (
-            <div key={c.name}
-              className="rounded-2xl p-5 flex items-start gap-4 transition-all hover:scale-[1.03] hover:-translate-y-1"
-              style={{ ...cardStyle, borderLeft: `3px solid ${tc.primary}` }}>
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl flex-shrink-0"
-                style={{ background: tc.primary + "15" }}>{c.icon}</div>
-              <div className="min-w-0">
-                <h3 className="font-semibold text-sm leading-tight mb-1" style={{ color: isDark ? "#e2e8f0" : "#1e293b" }}>{c.name}</h3>
-                <p className="text-xs mb-2" style={{ color: isDark ? "#64748b" : "#94a3b8" }}>{c.issuer}</p>
-                <span className="mono-font text-xs px-2 py-0.5 rounded"
-                  style={{ background: tc.primary + "15", color: tc.primary }}>{c.year}</span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
+//         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+//           {CERTS.map((c, i) => (
+//             <div key={c.name}
+//               className="rounded-2xl p-5 flex items-start gap-4 transition-all hover:scale-[1.03] hover:-translate-y-1"
+//               style={{ ...cardStyle, borderLeft: `3px solid ${tc.primary}` }}>
+//               <div className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl flex-shrink-0"
+//                 style={{ background: tc.primary + "15" }}>{c.icon}</div>
+//               <div className="min-w-0">
+//                 <h3 className="font-semibold text-sm leading-tight mb-1" style={{ color: isDark ? "#e2e8f0" : "#1e293b" }}>{c.name}</h3>
+//                 <p className="text-xs mb-2" style={{ color: isDark ? "#64748b" : "#94a3b8" }}>{c.issuer}</p>
+//                 <span className="mono-font text-xs px-2 py-0.5 rounded"
+//                   style={{ background: tc.primary + "15", color: tc.primary }}>{c.year}</span>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 
 // ═══════════════════════════════════════════════
 // CONTACT SECTION
@@ -1067,9 +1165,9 @@ function ContactSection({ tc, isDark }) {
             </div>
 
             {[
-              { icon: "📧", label: "Email", value: "arjun@developer.com", href: "mailto:arjun@developer.com" },
-              { icon: "💼", label: "LinkedIn", value: "linkedin.com/in/arjundev", href: "https://linkedin.com" },
-              { icon: "⌨", label: "GitHub", value: "github.com/arjundev", href: "https://github.com" },
+              { icon: "📧", label: "Email", value: "arjundeveloper123@gmail.com", href: "mailto:arjundeveloper123@gmail.com" },
+              { icon: "💼", label: "LinkedIn", value: "linkedin.com/in/arjundev", href: "https://www.linkedin.com/in/arjun-maurya-8365a3280/" },
+              { icon: "⌨", label: "GitHub", value: "github.com/arjundev", href: "https://github.com/arjunmaurya96" },
               { icon: "🌏", label: "Location", value: "India (Remote Available)", href: null },
             ].map(c => (
               <div key={c.label} className="rounded-2xl p-4 flex items-center gap-4 transition-all hover:scale-[1.02]"
@@ -1165,7 +1263,7 @@ function Footer({ tc, isDark, scrollTo }) {
           <button onClick={() => scrollTo("home")}
             className="heading-font text-2xl tracking-widest"
             style={{ color: tc.primary }}>
-            ARJUN<span style={{ color: isDark ? "#e2e8f0" : "#1e293b" }}>.DEV</span>
+            ARJUN<span style={{ color: isDark ? "#e2e8f0" : "#1e293b" }}>.DEVELOPER</span>
           </button>
 
           <div className="flex flex-wrap justify-center gap-4">
@@ -1196,7 +1294,7 @@ function Footer({ tc, isDark, scrollTo }) {
         <div className="mt-8 pt-6 text-center"
           style={{ borderTop: `1px solid ${isDark ? "#0f172a" : "#f1f5f9"}` }}>
           <p className="mono-font text-xs" style={{ color: isDark ? "#334155" : "#cbd5e1" }}>
-            © {new Date().getFullYear()} Arjun Developer. Crafted with ❤ using React.js & TailwindCSS
+            © {new Date().getFullYear()} Arjun Full Stack Developer. Crafted with ❤ using React.js & TailwindCSS
           </p>
           <p className="mono-font text-xs mt-1" style={{ color: isDark ? "#1e293b" : "#e2e8f0" }}>
             MERN Full Stack Developer · India
@@ -1351,7 +1449,7 @@ export default function App() {
         <ExperienceSection tc={tc} isDark={isDark} />
         <ProjectsSection tc={tc} isDark={isDark} />
         <TestimonialsSection tc={tc} isDark={isDark} />
-        <CertificationsSection tc={tc} isDark={isDark} />
+        {/* <CertificationsSection tc={tc} isDark={isDark} /> */}
         <ContactSection tc={tc} isDark={isDark} />
       </main>
 
