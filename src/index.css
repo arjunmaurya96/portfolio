@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary, #3b82f6);
+  border-radius: 3px;
+}
+
+/* Cursor */
+* {
+  cursor: none;
+}
+a, button, [role="button"], input, textarea, select {
+  cursor: none;
+}
+
+@media (max-width: 1024px) {
+  * { cursor: auto !important; }
+}
+
+/* Remove tap highlight on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--primary, #3b82f6);
+  color: white;
+}
