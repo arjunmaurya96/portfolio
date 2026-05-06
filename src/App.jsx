@@ -175,12 +175,42 @@ const EXPERIENCES = [
 
 const PROJECTS = [
   {
-    id: 1, title: "DevConnect Platform", category: "fullstack", featured: true,
-    desc: "A developer networking platform with real-time chat, job postings, code snippet sharing, and portfolio showcase. Supports 50,000+ registered users with live messaging.",
-    tech: ["React", "Node.js", "MongoDB", "Socket.io", "Redis", "AWS S3", "JWT"],
-    achievements: ["50K+ users", "Real-time messaging", "Code snippet sharing", "Job board"],
-    github: "#", demo: "#",
+    id: 1,
+    title: "Learning Management System (LMS)",
+    category: "fullstack",
+    featured: true,
+    desc: "A full-stack Learning Management System where students can enroll in courses, watch lectures, track progress, and instructors can create/manage courses. Includes secure authentication, payment integration, and responsive dashboard.",
+
+    tech: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Redux Toolkit",
+      "JWT",
+      "Cloudinary",
+      "Razorpay/Stripe"
+    ],
+
+    achievements: [
+      "Student & Instructor dashboards",
+      "Course enrollment system",
+      "Video lecture management",
+      "Secure authentication",
+      "Payment integration",
+      "Fully responsive UI"
+    ],
+
+    github: "#",
+    demo: "https://lms-1-klgy.onrender.com/",
   },
+  // {
+  //   id: 1, title: "DevConnect Platform", category: "fullstack", featured: true,
+  //   desc: "A developer networking platform with real-time chat, job postings, code snippet sharing, and portfolio showcase. Supports 50,000+ registered users with live messaging.",
+  //   tech: ["React", "Node.js", "MongoDB", "Socket.io", "Redis", "AWS S3", "JWT"],
+  //   achievements: ["50K+ users", "Real-time messaging", "Code snippet sharing", "Job board"],
+  //   github: "#", demo: "#",
+  // },
   {
     id: 2, title: "ShopEase E-Commerce", category: "fullstack", featured: true,
     desc: "Comprehensive multi-vendor e-commerce solution with advanced filtering, Stripe/Razorpay payment integration, order tracking, and a full-featured admin dashboard.",
@@ -970,8 +1000,13 @@ function ProjectsSection({ tc, isDark }) {
                     style={{ background: isDark ? "rgba(255,255,255,0.05)" : "rgba(0,0,0,0.04)", color: isDark ? "#94a3b8" : "#64748b", border: `1px solid ${isDark ? "#1e293b" : "#e2e8f0"}` }}>
                     ⌨ GitHub
                   </a>
-                  <a href={p.demo} className="flex-1 text-center py-2 rounded-xl text-xs font-semibold transition-all hover:scale-105 text-white"
-                    style={{ background: tc.primary }}>
+                  <a
+                    href={p.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 text-center py-2 rounded-xl text-xs font-semibold transition-all hover:scale-105 text-white"
+                    style={{ background: tc.primary }}
+                  >
                     🚀 Live Demo
                   </a>
                 </div>
@@ -1023,8 +1058,21 @@ function ProjectsSection({ tc, isDark }) {
                   style={{ background: isDark ? "rgba(255,255,255,0.05)" : "rgba(0,0,0,0.04)", color: isDark ? "#94a3b8" : "#64748b", border: `1px solid ${isDark ? "#1e293b" : "#e2e8f0"}` }}>
                   ⌨ View Code
                 </a>
-                <a href={modal.demo} className="flex-1 text-center py-2.5 rounded-xl text-sm font-semibold text-white transition-all"
+                {/* <a href={modal.demo} className="flex-1 text-center py-2.5 rounded-xl text-sm font-semibold text-white transition-all"
                   style={{ background: tc.primary, boxShadow: `0 4px 15px ${tc.glow}` }}>
+                  🚀 Live Demo
+                </a> */}
+
+                <a
+                  href={modal.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center py-2.5 rounded-xl text-sm font-semibold text-white transition-all"
+                  style={{
+                    background: tc.primary,
+                    boxShadow: `0 4px 15px ${tc.glow}`
+                  }}
+                >
                   🚀 Live Demo
                 </a>
               </div>
