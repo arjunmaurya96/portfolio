@@ -1,4 +1,10 @@
 import { useState, useEffect, useRef } from "react";
+import emailjs from "@emailjs/browser";
+import resume from '../public/Arjun_maurya.pdf'
+import ntlogx from '../src/assets/img/ntlogix-img.webp'
+import lms from '../src/assets/img/lms.webp'
+import cloudgateway from '../src/assets/img/cloudgateway.webp'
+import nextping from '../src/assets/img/nextping.webp'
 
 // ═══════════════════════════════════════════════
 // THEME & DATA CONFIGURATION
@@ -179,6 +185,7 @@ const PROJECTS = [
     title: "Learning Management System (LMS)",
     category: "fullstack",
     featured: true,
+    image: lms,
     desc: "A full-stack Learning Management System where students can enroll in courses, watch lectures, track progress, and instructors can create/manage courses. Includes secure authentication, payment integration, and responsive dashboard.",
 
     tech: [
@@ -211,41 +218,173 @@ const PROJECTS = [
   //   achievements: ["50K+ users", "Real-time messaging", "Code snippet sharing", "Job board"],
   //   github: "#", demo: "#",
   // },
+  // {
+  //   id: 2,
+  //   title: "ShopEase E-Commerce",
+  //   category: "fullstack",
+  //   featured: true,
+
+  //   desc: "Developed a full-stack MERN e-commerce application with role-based authentication where users can browse products, manage cart, place orders, and track purchases, while admins can manage users, products, orders, and platform activities through a dedicated admin dashboard.",
+
+  //   tech: [
+  //     "MongoDB",
+  //     "Express.js",
+  //     "React.js",
+  //     "Node.js",
+  //     "Context API",
+  //     "JWT",
+  //     "Razorpay",
+  //     "Cloudinary"
+  //   ],
+
+  //   achievements: [
+  //     "User Dashboard",
+  //     "Admin Dashboard",
+  //     "Role-Based Authentication",
+  //     "Order Management"
+  //   ],
+
+  //   github: "#",
+  //   demo: "#",
+  // },
+
+
   {
-    id: 2, title: "ShopEase E-Commerce", category: "fullstack", featured: true,
-    desc: "Comprehensive multi-vendor e-commerce solution with advanced filtering, Stripe/Razorpay payment integration, order tracking, and a full-featured admin dashboard.",
-    tech: ["Next.js", "Express", "PostgreSQL", "Stripe", "Redis", "Cloudinary", "Prisma"],
-    achievements: ["Multi-vendor", "Payment gateway", "Admin dashboard", "SEO optimised"],
-    github: "#", demo: "#",
+    id: 2,
+    title: "Electro E-Commerce",
+    category: "fullstack",
+    featured: true,
+
+    image: "https://okcredit-blog-images-prod.storage.googleapis.com/2021/04/ecommerce3-1.jpg",
+
+    desc: "Developed a full-stack MERN e-commerce application with role-based authentication where users can browse products, manage cart, place orders, and track purchases, while admins can manage users, products, orders, and platform activities through a dedicated admin dashboard.",
+
+    tech: [
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js",
+      "Context API",
+      "JWT",
+      "Razorpay",
+      "Cloudinary"
+    ],
+
+    achievements: [
+      "User Dashboard",
+      "Admin Dashboard",
+      "Role-Based Authentication",
+      "Order Management"
+    ],
+
+    github: "#",
+    demo: "#",
   },
   {
-    id: 3, title: "TaskFlow SaaS", category: "fullstack", featured: false,
-    desc: "Project management SaaS with real-time collaboration, Kanban boards, Gantt charts, time tracking, team analytics, and automated invoicing.",
-    tech: ["React", "Node.js", "MongoDB", "Socket.io", "Chart.js", "Stripe", "JWT"],
-    achievements: ["Real-time collab", "Kanban & Gantt", "Time tracking", "Invoicing"],
-    github: "#", demo: "#",
+    id: 3,
+    title: "Blog Management App",
+    category: "fullstack",
+    featured: false,
+    image:"https://marketplace.canva.com/EAE0krlP91c/1/0/800w/canva-orange-yellow-minimalist-aesthetic-a-day-in-my-life-travel-vlog-youtube-thumbnail-i5knf9BXY94.jpg",
+
+    desc: "Built a full-stack MERN blog application where users can read blogs, search content, and interact with posts, while admins can create, update, delete, and manage blog content through a dedicated dashboard.",
+
+    tech: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Cloudinary",
+      "Context API"
+    ],
+
+    achievements: [
+      "Admin Dashboard",
+      "CRUD Operations",
+      "Blog Management",
+      "Authentication"
+    ],
+
+    github: "#",
+    demo: "#",
   },
-  {
-    id: 4, title: "CryptoTracker Dashboard", category: "frontend", featured: false,
-    desc: "Real-time cryptocurrency tracking dashboard with portfolio management, price alerts, historical charts, market analysis, and 100+ supported coins.",
-    tech: ["React", "TypeScript", "TailwindCSS", "Chart.js", "CoinGecko API", "Zustand"],
-    achievements: ["100+ coins", "Real-time prices", "Portfolio tracking", "Price alerts"],
-    github: "#", demo: "#",
-  },
-  {
-    id: 5, title: "MediCare Hospital API", category: "backend", featured: false,
-    desc: "Comprehensive hospital management REST API with appointment scheduling, patient records, doctor management, billing, and automated email notifications.",
-    tech: ["Node.js", "Express", "MongoDB", "JWT", "Nodemailer", "Swagger", "Mongoose"],
-    achievements: ["Swagger docs", "Email alerts", "Appointment system", "Billing module"],
-    github: "#", demo: "#",
-  },
-  {
-    id: 6, title: "DevBlog CMS", category: "fullstack", featured: false,
-    desc: "Custom CMS for developer blogs with MDX support, syntax highlighting, SEO tools, newsletter integration via SendGrid, and an intuitive writing interface.",
-    tech: ["Next.js", "MDX", "MongoDB", "TailwindCSS", "SendGrid", "Vercel", "Gray-matter"],
-    achievements: ["MDX support", "SEO tooling", "Newsletter", "Code highlighting"],
-    github: "#", demo: "#",
-  },
+{
+  id: 4,
+  title: "NT Logix Company Website",
+  category: "frontend",
+  featured: false,
+  image:ntlogx,
+  desc: "Developed a responsive business website for NT Logix using HTML, CSS, Bootstrap, and JavaScript. Built modern UI sections, service pages, contact forms, responsive layouts, and optimized the website for better user experience across all devices.",
+
+  tech: [
+    "HTML",
+    "CSS",
+    "Bootstrap",
+    "JavaScript"
+  ],
+
+  achievements: [
+    "Responsive Design",
+    "Business Website",
+    "Modern UI",
+    "Cross Browser Support"
+  ],
+
+  github: "#",
+  demo: "https://www.ntlogix.in/",
+  
+
+},
+{
+  id: 5,
+  title: "Cloud Gateway Website",
+  category: "frontend",
+  featured: false,
+
+  desc: "Developed a modern business website for Cloud Gateway using React.js and Tailwind CSS with a strong focus on SEO optimization, fast page loading, responsive design, and improved user experience across all devices.",
+
+  tech: [
+    "React.js",
+    "Tailwind CSS",
+    "JavaScript",
+    "SEO Optimization",
+    "Performance Optimization"
+  ],
+  achievements: [
+    "SEO Optimized",
+    "Fast Loading Pages",
+    "Responsive Design",
+    "Modern UI/UX"
+  ],
+  github: "#",
+  demo: "https://cloudgateway.in/",
+  image:cloudgateway
+},
+{
+  id: 6,
+  title: "NextPing Business Website",
+  category: "frontend",
+  featured: false,
+  desc: "Built a fully responsive business website for a Dubai-based company using React.js and Bootstrap. Developed modern UI sections, optimized layouts for all devices, and ensured smooth performance with a user-friendly experience.",
+  tech: [
+    "React.js",
+    "Bootstrap",
+    "JavaScript",
+    "Responsive Design"
+  ],
+
+  achievements: [
+    "Dubai Client Project",
+    "Fully Responsive",
+    "Modern UI Design",
+    "Cross Browser Compatibility"
+  ],
+
+  github: "#",
+  demo: "https://nextping.ae/",
+  image: nextping
+}
 ];
 
 const TESTIMONIALS = [
@@ -274,7 +413,7 @@ const CERTS = [
 
 const EDUCATION = [
   { degree: "Diploma in Computer Science", institution: "Government Polytechnic Institute", year: "2020–2023", grade: "71%", icon: "🎓" },
-  { degree: "12th (PCM)", institution: "State Board", year: "2018–2019", grade: "60%", icon: "📚" },
+  { degree: "12th (PCM)", institution: "State Board", year: "2019–2020", grade: "60%", icon: "📚" },
   { degree: "10th", institution: "State Board", year: "2016–2017", grade: "81%", icon: "🏫" },
 ];
 
@@ -282,6 +421,7 @@ const SOCIALS = [
   { name: "GitHub", href: "https://github.com/arjunmaurya96", label: "https://github.com/arjunmaurya96" },
   { name: "LinkedIn", href: "https://www.linkedin.com/in/arjun-maurya-8365a3280/", label: "https://www.linkedin.com/in/arjun-maurya-8365a3280/" },
   { name: "Instagram", href: "https://www.instagram.com/arjun_high_level_programmer?igsh=MXFvdmVvdmh5bnR4aA==", label: "https://www.instagram.com/arjun_high_level_programmer?igsh=MXFvdmVvdmh5bnR4aA==" },
+  { name: "YouTube", href: "https://www.youtube.com/@Coderlifeblogs", label: "https://www.youtube.com/@Coderlifeblogs" },
 ];
 
 // ═══════════════════════════════════════════════
@@ -483,6 +623,7 @@ function HeroSection({ tc, isDark }) {
   const titles = ["MERN Full Stack Developer", "React.js Expert", "Node.js Engineer", "MongoDB Specialist"];
   const curTitle = titles[titleIdx];
 
+
   useEffect(() => {
     let i = 0;
     const type = () => {
@@ -585,7 +726,7 @@ function HeroSection({ tc, isDark }) {
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start mb-8">
-              <a href="#" download
+              <a href={resume} download
                 className="flex items-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white transition-all hover:scale-105 hover:-translate-y-1"
                 style={{ background: tc.primary, boxShadow: `0 8px 25px ${tc.glow}` }}>
                 ⬇ Download Resume
@@ -954,8 +1095,13 @@ function ProjectsSection({ tc, isDark }) {
                 style={{ background: `linear-gradient(135deg,${tc.primary}20,${tc.primary}05)` }}>
                 <div className="text-center">
                   <div className="heading-font text-5xl mb-1" style={{ color: tc.primary + "40" }}>
-                    {["⚡", "🛒", "📋", "📈", "🏥", "📝"][i % 6]}
+                    {["img", "🛒", "📋", "📈", "🏥", "📝"][i % 6]}
                   </div>
+                  <img
+                    src={p.image}
+                    alt={p.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
                   <div className="heading-font text-xl tracking-wider" style={{ color: tc.primary }}>
                     {p.category.toUpperCase()}
                   </div>
@@ -1171,12 +1317,158 @@ function TestimonialsSection({ tc, isDark }) {
 // ═══════════════════════════════════════════════
 // CONTACT SECTION
 // ═══════════════════════════════════════════════
+// function ContactSection({ tc, isDark }) {
+//   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
+//   const [sent, setSent] = useState(false);
+//   const cardStyle = { background: isDark ? "rgba(15,23,42,0.8)" : "rgba(255,255,255,0.8)", border: `1px solid ${isDark ? "#1e293b" : "#e2e8f0"}`, backdropFilter: "blur(12px)" };
+//   const inputStyle = {
+//     background: isDark ? "rgba(255,255,255,0.04)" : "rgba(0,0,0,0.03)",
+//     border: `1px solid ${isDark ? "#1e293b" : "#e2e8f0"}`,
+//     color: isDark ? "#e2e8f0" : "#1e293b",
+//     borderRadius: "12px",
+//     padding: "12px 16px",
+//     width: "100%",
+//     fontSize: "14px",
+//     outline: "none",
+//     transition: "border-color 0.2s",
+//   };
+
+//   const submit = (e) => {
+//     e.preventDefault();
+//     setSent(true);
+//     setTimeout(() => setSent(false), 4000);
+//     setForm({ name: "", email: "", subject: "", message: "" });
+//   };
+
+//   return (
+//     <section id="contact" className="py-24 px-4 sm:px-6">
+//       <div className="max-w-6xl mx-auto">
+//         <SectionTitle label="Get In Touch" title="CONTACT ME"
+//           subtitle="Have a project in mind? Let's build something amazing together"
+//           tc={tc} isDark={isDark} />
+
+//         <div className="grid lg:grid-cols-2 gap-10">
+//           {/* Left - Info */}
+//           <div className="space-y-6">
+//             <div className="rounded-2xl p-6" style={cardStyle}>
+//               <h3 className="font-semibold text-lg mb-2" style={{ color: isDark ? "#e2e8f0" : "#1e293b" }}>Let's Talk!</h3>
+//               <p className="text-sm leading-relaxed" style={{ color: isDark ? "#94a3b8" : "#64748b" }}>
+//                 I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+//                 Drop me a message and I'll get back within 24 hours.
+//               </p>
+//             </div>
+
+//             {[
+//               { icon: "📧", label: "Email", value: "arjundeveloper123@gmail.com", href: "mailto:arjundeveloper123@gmail.com" },
+//               { icon: "💼", label: "LinkedIn", value: "linkedin.com/in/arjundev", href: "https://www.linkedin.com/in/arjun-maurya-8365a3280/" },
+//               { icon: "⌨", label: "GitHub", value: "github.com/arjundev", href: "https://github.com/arjunmaurya96" },
+//               { icon: "🌏", label: "Location", value: "India (Remote Available)", href: null },
+//             ].map(c => (
+//               <div key={c.label} className="rounded-2xl p-4 flex items-center gap-4 transition-all hover:scale-[1.02]"
+//                 style={cardStyle}>
+//                 <div className="w-10 h-10 rounded-xl flex items-center justify-center text-lg flex-shrink-0"
+//                   style={{ background: tc.primary + "15" }}>{c.icon}</div>
+//                 <div>
+//                   <p className="mono-font text-xs uppercase tracking-wider" style={{ color: isDark ? "#475569" : "#94a3b8" }}>{c.label}</p>
+//                   {c.href ? (
+//                     <a href={c.href} className="text-sm font-medium hover:underline" style={{ color: tc.primary }}>{c.value}</a>
+//                   ) : (
+//                     <p className="text-sm font-medium" style={{ color: isDark ? "#e2e8f0" : "#1e293b" }}>{c.value}</p>
+//                   )}
+//                 </div>
+//               </div>
+//             ))}
+//           </div>
+
+//           {/* Right - Form */}
+//           <div className="rounded-2xl p-6 md:p-8" style={{ ...cardStyle, borderTop: `3px solid ${tc.primary}` }}>
+//             {sent ? (
+//               <div className="flex flex-col items-center justify-center h-full py-12">
+//                 <div className="w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4"
+//                   style={{ background: tc.primary + "15" }}>✓</div>
+//                 <h3 className="font-bold text-xl mb-2" style={{ color: tc.primary }}>Message Sent!</h3>
+//                 <p className="text-sm text-center" style={{ color: isDark ? "#64748b" : "#94a3b8" }}>
+//                   Thank you for reaching out. I'll get back to you soon!
+//                 </p>
+//               </div>
+//             ) : (
+//               <form onSubmit={submit} className="space-y-4">
+//                 <div className="grid sm:grid-cols-2 gap-4">
+//                   <div>
+//                     <label className="mono-font text-xs uppercase tracking-wider block mb-1.5"
+//                       style={{ color: isDark ? "#475569" : "#94a3b8" }}>Your Name</label>
+//                     <input type="text" required placeholder="John Doe" value={form.name}
+//                       style={inputStyle}
+//                       onChange={e => setForm({ ...form, name: e.target.value })}
+//                       onFocus={e => e.target.style.borderColor = tc.primary}
+//                       onBlur={e => e.target.style.borderColor = isDark ? "#1e293b" : "#e2e8f0"} />
+//                   </div>
+//                   <div>
+//                     <label className="mono-font text-xs uppercase tracking-wider block mb-1.5"
+//                       style={{ color: isDark ? "#475569" : "#94a3b8" }}>Email Address</label>
+//                     <input type="email" required placeholder="john@example.com" value={form.email}
+//                       style={inputStyle}
+//                       onChange={e => setForm({ ...form, email: e.target.value })}
+//                       onFocus={e => e.target.style.borderColor = tc.primary}
+//                       onBlur={e => e.target.style.borderColor = isDark ? "#1e293b" : "#e2e8f0"} />
+//                   </div>
+//                 </div>
+//                 <div>
+//                   <label className="mono-font text-xs uppercase tracking-wider block mb-1.5"
+//                     style={{ color: isDark ? "#475569" : "#94a3b8" }}>Subject</label>
+//                   <input type="text" required placeholder="Project Inquiry..." value={form.subject}
+//                     style={inputStyle}
+//                     onChange={e => setForm({ ...form, subject: e.target.value })}
+//                     onFocus={e => e.target.style.borderColor = tc.primary}
+//                     onBlur={e => e.target.style.borderColor = isDark ? "#1e293b" : "#e2e8f0"} />
+//                 </div>
+//                 <div>
+//                   <label className="mono-font text-xs uppercase tracking-wider block mb-1.5"
+//                     style={{ color: isDark ? "#475569" : "#94a3b8" }}>Message</label>
+//                   <textarea required rows={5} placeholder="Tell me about your project..." value={form.message}
+//                     style={{ ...inputStyle, resize: "vertical" }}
+//                     onChange={e => setForm({ ...form, message: e.target.value })}
+//                     onFocus={e => e.target.style.borderColor = tc.primary}
+//                     onBlur={e => e.target.style.borderColor = isDark ? "#1e293b" : "#e2e8f0"} />
+//                 </div>
+//                 <button type="submit"
+//                   className="w-full py-3.5 rounded-xl font-semibold text-white transition-all hover:scale-[1.02] hover:-translate-y-0.5"
+//                   style={{ background: tc.primary, boxShadow: `0 8px 25px ${tc.glow}` }}>
+//                   Send Message →
+//                 </button>
+//               </form>
+//             )}
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
+
+
 function ContactSection({ tc, isDark }) {
-  const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
   const [sent, setSent] = useState(false);
-  const cardStyle = { background: isDark ? "rgba(15,23,42,0.8)" : "rgba(255,255,255,0.8)", border: `1px solid ${isDark ? "#1e293b" : "#e2e8f0"}`, backdropFilter: "blur(12px)" };
+
+  const cardStyle = {
+    background: isDark
+      ? "rgba(15,23,42,0.8)"
+      : "rgba(255,255,255,0.8)",
+    border: `1px solid ${isDark ? "#1e293b" : "#e2e8f0"}`,
+    backdropFilter: "blur(12px)",
+  };
+
   const inputStyle = {
-    background: isDark ? "rgba(255,255,255,0.04)" : "rgba(0,0,0,0.03)",
+    background: isDark
+      ? "rgba(255,255,255,0.04)"
+      : "rgba(0,0,0,0.03)",
     border: `1px solid ${isDark ? "#1e293b" : "#e2e8f0"}`,
     color: isDark ? "#e2e8f0" : "#1e293b",
     borderRadius: "12px",
@@ -1187,47 +1479,147 @@ function ContactSection({ tc, isDark }) {
     transition: "border-color 0.2s",
   };
 
+  // EMAILJS SUBMIT FUNCTION
   const submit = (e) => {
     e.preventDefault();
-    setSent(true);
-    setTimeout(() => setSent(false), 4000);
-    setForm({ name: "", email: "", subject: "", message: "" });
+
+    emailjs
+      .send(
+        "service_k41rw8n",
+        "template_z8lzzm8",
+        {
+          name: form.name,
+          email: form.email,
+          subject: form.subject,
+          message: form.message,
+        },
+        "gEoYwkl8lrQ1Tekau"
+      )
+      .then((result) => {
+        console.log("Email Sent:", result.text);
+
+        setSent(true);
+
+        setForm({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+
+        setTimeout(() => {
+          setSent(false);
+        }, 4000);
+      })
+      .catch((error) => {
+        console.log("Email Error:", error);
+        alert("Something went wrong. Please try again.");
+      });
   };
 
   return (
     <section id="contact" className="py-24 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
-        <SectionTitle label="Get In Touch" title="CONTACT ME"
+        <SectionTitle
+          label="Get In Touch"
+          title="CONTACT ME"
           subtitle="Have a project in mind? Let's build something amazing together"
-          tc={tc} isDark={isDark} />
+          tc={tc}
+          isDark={isDark}
+        />
 
         <div className="grid lg:grid-cols-2 gap-10">
           {/* Left - Info */}
           <div className="space-y-6">
             <div className="rounded-2xl p-6" style={cardStyle}>
-              <h3 className="font-semibold text-lg mb-2" style={{ color: isDark ? "#e2e8f0" : "#1e293b" }}>Let's Talk!</h3>
-              <p className="text-sm leading-relaxed" style={{ color: isDark ? "#94a3b8" : "#64748b" }}>
-                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+              <h3
+                className="font-semibold text-lg mb-2"
+                style={{
+                  color: isDark ? "#e2e8f0" : "#1e293b",
+                }}
+              >
+                Let's Talk!
+              </h3>
+
+              <p
+                className="text-sm leading-relaxed"
+                style={{
+                  color: isDark ? "#94a3b8" : "#64748b",
+                }}
+              >
+                I'm always open to discussing new projects,
+                creative ideas, or opportunities to be part of your vision.
                 Drop me a message and I'll get back within 24 hours.
               </p>
             </div>
 
             {[
-              { icon: "📧", label: "Email", value: "arjundeveloper123@gmail.com", href: "mailto:arjundeveloper123@gmail.com" },
-              { icon: "💼", label: "LinkedIn", value: "linkedin.com/in/arjundev", href: "https://www.linkedin.com/in/arjun-maurya-8365a3280/" },
-              { icon: "⌨", label: "GitHub", value: "github.com/arjundev", href: "https://github.com/arjunmaurya96" },
-              { icon: "🌏", label: "Location", value: "India (Remote Available)", href: null },
-            ].map(c => (
-              <div key={c.label} className="rounded-2xl p-4 flex items-center gap-4 transition-all hover:scale-[1.02]"
-                style={cardStyle}>
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center text-lg flex-shrink-0"
-                  style={{ background: tc.primary + "15" }}>{c.icon}</div>
+              {
+                icon: "📧",
+                label: "Email",
+                value: "arjundeveloper123@gmail.com",
+                href: "mailto:arjundeveloper123@gmail.com",
+              },
+              {
+                icon: "💼",
+                label: "LinkedIn",
+                value: "linkedin.com/in/arjundev",
+                href: "https://www.linkedin.com/in/arjun-maurya-8365a3280/",
+              },
+              {
+                icon: "⌨",
+                label: "GitHub",
+                value: "github.com/arjundev",
+                href: "https://github.com/arjunmaurya96",
+              },
+              {
+                icon: "🌏",
+                label: "Location",
+                value: "India (Remote Available)",
+                href: null,
+              },
+            ].map((c) => (
+              <div
+                key={c.label}
+                className="rounded-2xl p-4 flex items-center gap-4 transition-all hover:scale-[1.02]"
+                style={cardStyle}
+              >
+                <div
+                  className="w-10 h-10 rounded-xl flex items-center justify-center text-lg flex-shrink-0"
+                  style={{
+                    background: tc.primary + "15",
+                  }}
+                >
+                  {c.icon}
+                </div>
+
                 <div>
-                  <p className="mono-font text-xs uppercase tracking-wider" style={{ color: isDark ? "#475569" : "#94a3b8" }}>{c.label}</p>
+                  <p
+                    className="mono-font text-xs uppercase tracking-wider"
+                    style={{
+                      color: isDark ? "#475569" : "#94a3b8",
+                    }}
+                  >
+                    {c.label}
+                  </p>
+
                   {c.href ? (
-                    <a href={c.href} className="text-sm font-medium hover:underline" style={{ color: tc.primary }}>{c.value}</a>
+                    <a
+                      href={c.href}
+                      className="text-sm font-medium hover:underline"
+                      style={{ color: tc.primary }}
+                    >
+                      {c.value}
+                    </a>
                   ) : (
-                    <p className="text-sm font-medium" style={{ color: isDark ? "#e2e8f0" : "#1e293b" }}>{c.value}</p>
+                    <p
+                      className="text-sm font-medium"
+                      style={{
+                        color: isDark ? "#e2e8f0" : "#1e293b",
+                      }}
+                    >
+                      {c.value}
+                    </p>
                   )}
                 </div>
               </div>
@@ -1235,13 +1627,37 @@ function ContactSection({ tc, isDark }) {
           </div>
 
           {/* Right - Form */}
-          <div className="rounded-2xl p-6 md:p-8" style={{ ...cardStyle, borderTop: `3px solid ${tc.primary}` }}>
+          <div
+            className="rounded-2xl p-6 md:p-8"
+            style={{
+              ...cardStyle,
+              borderTop: `3px solid ${tc.primary}`,
+            }}
+          >
             {sent ? (
               <div className="flex flex-col items-center justify-center h-full py-12">
-                <div className="w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4"
-                  style={{ background: tc.primary + "15" }}>✓</div>
-                <h3 className="font-bold text-xl mb-2" style={{ color: tc.primary }}>Message Sent!</h3>
-                <p className="text-sm text-center" style={{ color: isDark ? "#64748b" : "#94a3b8" }}>
+                <div
+                  className="w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4"
+                  style={{
+                    background: tc.primary + "15",
+                  }}
+                >
+                  ✓
+                </div>
+
+                <h3
+                  className="font-bold text-xl mb-2"
+                  style={{ color: tc.primary }}
+                >
+                  Message Sent!
+                </h3>
+
+                <p
+                  className="text-sm text-center"
+                  style={{
+                    color: isDark ? "#64748b" : "#94a3b8",
+                  }}
+                >
                   Thank you for reaching out. I'll get back to you soon!
                 </p>
               </div>
@@ -1249,45 +1665,117 @@ function ContactSection({ tc, isDark }) {
               <form onSubmit={submit} className="space-y-4">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="mono-font text-xs uppercase tracking-wider block mb-1.5"
-                      style={{ color: isDark ? "#475569" : "#94a3b8" }}>Your Name</label>
-                    <input type="text" required placeholder="John Doe" value={form.name}
+                    <label
+                      className="mono-font text-xs uppercase tracking-wider block mb-1.5"
+                      style={{
+                        color: isDark ? "#475569" : "#94a3b8",
+                      }}
+                    >
+                      Your Name
+                    </label>
+
+                    <input
+                      type="text"
+                      required
+                      placeholder="John Doe"
+                      value={form.name}
                       style={inputStyle}
-                      onChange={e => setForm({ ...form, name: e.target.value })}
-                      onFocus={e => e.target.style.borderColor = tc.primary}
-                      onBlur={e => e.target.style.borderColor = isDark ? "#1e293b" : "#e2e8f0"} />
+                      onChange={(e) =>
+                        setForm({
+                          ...form,
+                          name: e.target.value,
+                        })
+                      }
+                    />
                   </div>
+
                   <div>
-                    <label className="mono-font text-xs uppercase tracking-wider block mb-1.5"
-                      style={{ color: isDark ? "#475569" : "#94a3b8" }}>Email Address</label>
-                    <input type="email" required placeholder="john@example.com" value={form.email}
+                    <label
+                      className="mono-font text-xs uppercase tracking-wider block mb-1.5"
+                      style={{
+                        color: isDark ? "#475569" : "#94a3b8",
+                      }}
+                    >
+                      Email Address
+                    </label>
+
+                    <input
+                      type="email"
+                      required
+                      placeholder="john@example.com"
+                      value={form.email}
                       style={inputStyle}
-                      onChange={e => setForm({ ...form, email: e.target.value })}
-                      onFocus={e => e.target.style.borderColor = tc.primary}
-                      onBlur={e => e.target.style.borderColor = isDark ? "#1e293b" : "#e2e8f0"} />
+                      onChange={(e) =>
+                        setForm({
+                          ...form,
+                          email: e.target.value,
+                        })
+                      }
+                    />
                   </div>
                 </div>
+
                 <div>
-                  <label className="mono-font text-xs uppercase tracking-wider block mb-1.5"
-                    style={{ color: isDark ? "#475569" : "#94a3b8" }}>Subject</label>
-                  <input type="text" required placeholder="Project Inquiry..." value={form.subject}
+                  <label
+                    className="mono-font text-xs uppercase tracking-wider block mb-1.5"
+                    style={{
+                      color: isDark ? "#475569" : "#94a3b8",
+                    }}
+                  >
+                    Subject
+                  </label>
+
+                  <input
+                    type="text"
+                    required
+                    placeholder="Project Inquiry..."
+                    value={form.subject}
                     style={inputStyle}
-                    onChange={e => setForm({ ...form, subject: e.target.value })}
-                    onFocus={e => e.target.style.borderColor = tc.primary}
-                    onBlur={e => e.target.style.borderColor = isDark ? "#1e293b" : "#e2e8f0"} />
+                    onChange={(e) =>
+                      setForm({
+                        ...form,
+                        subject: e.target.value,
+                      })
+                    }
+                  />
                 </div>
+
                 <div>
-                  <label className="mono-font text-xs uppercase tracking-wider block mb-1.5"
-                    style={{ color: isDark ? "#475569" : "#94a3b8" }}>Message</label>
-                  <textarea required rows={5} placeholder="Tell me about your project..." value={form.message}
-                    style={{ ...inputStyle, resize: "vertical" }}
-                    onChange={e => setForm({ ...form, message: e.target.value })}
-                    onFocus={e => e.target.style.borderColor = tc.primary}
-                    onBlur={e => e.target.style.borderColor = isDark ? "#1e293b" : "#e2e8f0"} />
+                  <label
+                    className="mono-font text-xs uppercase tracking-wider block mb-1.5"
+                    style={{
+                      color: isDark ? "#475569" : "#94a3b8",
+                    }}
+                  >
+                    Message
+                  </label>
+
+                  <textarea
+                    required
+                    rows={5}
+                    placeholder="Tell me about your project..."
+                    value={form.message}
+                    style={{
+                      ...inputStyle,
+                      resize: "vertical",
+                    }}
+                    onChange={(e) =>
+                      setForm({
+                        ...form,
+                        message: e.target.value,
+                      })
+                    }
+                  />
                 </div>
-                <button type="submit"
+
+                <button
+                  type="submit"
                   className="w-full py-3.5 rounded-xl font-semibold text-white transition-all hover:scale-[1.02] hover:-translate-y-0.5"
-                  style={{ background: tc.primary, boxShadow: `0 8px 25px ${tc.glow}` }}>
+                  style={{
+                    background: tc.primary,
+                    boxShadow: `0 8px 25px ${tc.glow}`,
+                  }}
+                >
                   Send Message →
                 </button>
               </form>
@@ -1298,6 +1786,8 @@ function ContactSection({ tc, isDark }) {
     </section>
   );
 }
+
+
 
 // ═══════════════════════════════════════════════
 // FOOTER
