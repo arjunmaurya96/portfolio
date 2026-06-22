@@ -3,9 +3,12 @@ import emailjs from "@emailjs/browser";
 import resume from '../public/Arjun_maurya.pdf'
 import ntlogx from '../src/assets/img/ntlogix-img.webp'
 import lms from '../src/assets/img/lms.webp'
+// import ecommerce '../src/assets/img/ecommerce.jpg'
 import cloudgateway from '../src/assets/img/cloudgateway.webp'
 import nextping from '../src/assets/img/nextping.webp'
-
+import ecomm from '../src/assets/img/ecommerce.jpg'
+import landingpage from '../src/assets/img/landingpage.jpg'
+import sdgmtech from '../src/assets/img/sdgm.jpg'
 // ═══════════════════════════════════════════════
 // THEME & DATA CONFIGURATION
 // ═══════════════════════════════════════════════
@@ -255,7 +258,7 @@ const PROJECTS = [
     category: "fullstack",
     featured: true,
 
-    image: "https://okcredit-blog-images-prod.storage.googleapis.com/2021/04/ecommerce3-1.jpg",
+    image: ecomm,
 
     desc: "Developed a full-stack MERN e-commerce application with role-based authentication where users can browse products, manage cart, place orders, and track purchases, while admins can manage users, products, orders, and platform activities through a dedicated admin dashboard.",
 
@@ -278,113 +281,144 @@ const PROJECTS = [
     ],
 
     github: "#",
-    demo: "#",
+    demo: "https://mern-ecommerce-1-0mb5.onrender.com/",
   },
+
   {
     id: 3,
-    title: "Blog Management App",
-    category: "fullstack",
-    featured: false,
-    image:"https://marketplace.canva.com/EAE0krlP91c/1/0/800w/canva-orange-yellow-minimalist-aesthetic-a-day-in-my-life-travel-vlog-youtube-thumbnail-i5knf9BXY94.jpg",
+    title: "TextSmashZone",
+    category: "frontend",
+    featured: true,
 
-    desc: "Built a full-stack MERN blog application where users can read blogs, search content, and interact with posts, while admins can create, update, delete, and manage blog content through a dedicated dashboard.",
+    image: landingpage,
+
+    desc: "Designed and developed a modern CPaaS and business messaging platform website with a highly responsive UI, smooth animations, service showcase sections, pricing plans, lead generation forms, and optimized user experience. Built using React.js, Bootstrap, and custom CSS with a focus on performance, responsiveness, and conversion-driven design.",
 
     tech: [
       "React.js",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "JWT",
-      "Cloudinary",
-      "Context API"
+      "JavaScript",
+      "Bootstrap",
+      "CSS3",
+      "HTML5",
+      "Axios",
+      "Responsive Design"
     ],
 
     achievements: [
-      "Admin Dashboard",
-      "CRUD Operations",
-      "Blog Management",
-      "Authentication"
+      "Responsive UI Design",
+      "Lead Generation Forms",
+      "Modern Landing Pages",
+      "Service Showcase Sections",
+      "Pricing Modules",
+      "Performance Optimization"
     ],
 
     github: "#",
-    demo: "#",
+    demo: "https://textsmashzone.online/"
   },
-{
-  id: 4,
-  title: "NT Logix Company Website",
+  {
+    id: 4,
+    title: "NT Logix Company Website",
+    category: "frontend",
+    featured: false,
+    image: ntlogx,
+    desc: "Developed a responsive business website for NT Logix using HTML, CSS, Bootstrap, and JavaScript. Built modern UI sections, service pages, contact forms, responsive layouts, and optimized the website for better user experience across all devices.",
+
+    tech: [
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "JavaScript"
+    ],
+
+    achievements: [
+      "Responsive Design",
+      "Business Website",
+      "Modern UI",
+      "Cross Browser Support"
+    ],
+
+    github: "#",
+    demo: "https://www.ntlogix.in/",
+
+
+  },
+  {
+    id: 5,
+    title: "Cloud Gateway Website",
+    category: "frontend",
+    featured: false,
+
+    desc: "Developed a modern business website for Cloud Gateway using React.js and Tailwind CSS with a strong focus on SEO optimization, fast page loading, responsive design, and improved user experience across all devices.",
+
+    tech: [
+      "React.js",
+      "Tailwind CSS",
+      "JavaScript",
+      "SEO Optimization",
+      "Performance Optimization"
+    ],
+    achievements: [
+      "SEO Optimized",
+      "Fast Loading Pages",
+      "Responsive Design",
+      "Modern UI/UX"
+    ],
+    github: "#",
+    demo: "https://cloudgateway.in/",
+    image: cloudgateway
+  },
+
+  {
+  id: 7,
+  title: "SDGM Tech Business Website",
   category: "frontend",
-  featured: false,
-  image:ntlogx,
-  desc: "Developed a responsive business website for NT Logix using HTML, CSS, Bootstrap, and JavaScript. Built modern UI sections, service pages, contact forms, responsive layouts, and optimized the website for better user experience across all devices.",
-
-  tech: [
-    "HTML",
-    "CSS",
-    "Bootstrap",
-    "JavaScript"
-  ],
-
-  achievements: [
-    "Responsive Design",
-    "Business Website",
-    "Modern UI",
-    "Cross Browser Support"
-  ],
-
-  github: "#",
-  demo: "https://www.ntlogix.in/",
-  
-
-},
-{
-  id: 5,
-  title: "Cloud Gateway Website",
-  category: "frontend",
-  featured: false,
-
-  desc: "Developed a modern business website for Cloud Gateway using React.js and Tailwind CSS with a strong focus on SEO optimization, fast page loading, responsive design, and improved user experience across all devices.",
-
+  featured: true,
+  desc: "Designed and developed a modern business website for SDGM Tech using React.js. Created responsive layouts, engaging UI sections, service pages, and optimized performance to deliver a seamless user experience across all devices.",
   tech: [
     "React.js",
     "Tailwind CSS",
-    "JavaScript",
-    "SEO Optimization",
-    "Performance Optimization"
-  ],
-  achievements: [
-    "SEO Optimized",
-    "Fast Loading Pages",
-    "Responsive Design",
-    "Modern UI/UX"
-  ],
-  github: "#",
-  demo: "https://cloudgateway.in/",
-  image:cloudgateway
-},
-{
-  id: 6,
-  title: "NextPing Business Website",
-  category: "frontend",
-  featured: false,
-  desc: "Built a fully responsive business website for a Dubai-based company using React.js and Bootstrap. Developed modern UI sections, optimized layouts for all devices, and ensured smooth performance with a user-friendly experience.",
-  tech: [
-    "React.js",
-    "Bootstrap",
     "JavaScript",
     "Responsive Design"
   ],
 
   achievements: [
-    "Dubai Client Project",
-    "Fully Responsive",
-    "Modern UI Design",
-    "Cross Browser Compatibility"
+    "Modern Business Website",
+    "Fully Responsive Design",
+    "Performance Optimized",
+    "Professional User Experience"
   ],
 
   github: "#",
-  demo: "https://nextping.ae/",
-  image: nextping
-}
+  demo: "https://sdgmtech.in/",
+  image: sdgmtech
+},
+
+  {
+    id: 6,
+    title: "NextPing Business Website",
+    category: "frontend",
+    featured: false,
+    desc: "Built a fully responsive business website for a Dubai-based company using React.js and Bootstrap. Developed modern UI sections, optimized layouts for all devices, and ensured smooth performance with a user-friendly experience.",
+    tech: [
+      "React.js",
+      "Bootstrap",
+      "JavaScript",
+      "Responsive Design"
+    ],
+
+    achievements: [
+      "Dubai Client Project",
+      "Fully Responsive",
+      "Modern UI Design",
+      "Cross Browser Compatibility"
+    ],
+
+    github: "#",
+    demo: "https://nextping.ae/",
+    image: nextping
+  }
+
 ];
 
 const TESTIMONIALS = [
@@ -620,7 +654,7 @@ function Navbar({ isDark, setDarkMode, tc, scrollTo, mobileNav, setMobileNav }) 
 function HeroSection({ tc, isDark }) {
   const [typed, setTyped] = useState("");
   const [titleIdx, setTitleIdx] = useState(0);
-  const titles = ["MERN Full Stack Developer", "React.js Expert", "Node.js Engineer", "MongoDB Specialist"];
+  const titles = ["MERN Full Stack Developer", "React.js Expert", "Node.js Engineer", "Database"];
   const curTitle = titles[titleIdx];
 
 
@@ -1801,7 +1835,7 @@ function Footer({ tc, isDark, scrollTo }) {
           <button onClick={() => scrollTo("home")}
             className="heading-font text-2xl tracking-widest"
             style={{ color: tc.primary }}>
-            ARJUN<span style={{ color: isDark ? "#e2e8f0" : "#1e293b" }}>.DEVELOPER</span>
+            ARJUN<span style={{ color: isDark ? "#e2e8f0" : "#1e293b" }}>.PROGRAMMER</span>
           </button>
 
           <div className="flex flex-wrap justify-center gap-4">
