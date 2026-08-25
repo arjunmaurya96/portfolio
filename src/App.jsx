@@ -9,9 +9,11 @@ import nextping from '../src/assets/img/nextping.webp'
 import ecomm from '../src/assets/img/ecommerce.jpg'
 import landingpage from '../src/assets/img/landingpage.jpg'
 import sdgmtech from '../src/assets/img/sdgm.jpg'
+
 // ═══════════════════════════════════════════════
 // THEME & DATA CONFIGURATION
 // ═══════════════════════════════════════════════
+
 const THEMES = {
   orange: { name: "Orange", primary: "#f97316", hover: "#ea580c", glow: "rgba(249,115,22,0.25)", ring: "rgba(249,115,22,0.4)" },
   blue: { name: "Blue", primary: "#3b82f6", hover: "#2563eb", glow: "rgba(59,130,246,0.25)", ring: "rgba(59,130,246,0.4)" },
@@ -1882,7 +1884,7 @@ function Footer({ tc, isDark, scrollTo }) {
 // ═══════════════════════════════════════════════
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
-  const [theme, setTheme] = useState("blue");
+  const [theme, setTheme] = useState("orange");
   const [loading, setLoading] = useState(true);
   const [progress, setProgress] = useState(0);
   const [mobileNav, setMobileNav] = useState(false);
