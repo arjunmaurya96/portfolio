@@ -4,27 +4,26 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0e3b34" />
 
-    <!-- SEO Meta Tags -->
-    <title>Arjun Developer | Senior MERN Full Stack Developer</title>
-    <meta name="description" content="Senior MERN Full Stack Developer with 5+ years of experience. Specializing in React.js, Node.js, MongoDB, and building scalable web applications." />
-    <meta name="keywords" content="MERN developer, full stack developer, React developer, Node.js developer, MongoDB, web developer India" />
-    <meta name="author" content="Arjun Developer" />
+    <title>Arjun Maurya | MERN Full Stack Developer</title>
+    <meta name="description" content="Arjun Maurya is a MERN full stack developer in Gurugram with 1+ year of experience building React, Node.js and MongoDB web applications." />
+    <meta name="keywords" content="Arjun Maurya, MERN developer, full stack developer, React developer, Node.js developer, MongoDB, web developer India, mobile app development, CRM development, HRMS development, SEO services, social media post design, freelance developer, part-time developer, WhatsApp chatbot, website chatbot, ecommerce chatbot, AI chatbot, API integration, WhatsApp API integration, Google Sheets integration" />
+    <meta name="author" content="Arjun Maurya" />
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Arjun Developer | Senior MERN Full Stack Developer" />
-    <meta property="og:description" content="Building scalable, high-performance web applications using the MERN stack." />
+    <meta property="og:title" content="Arjun Maurya | MERN Full Stack Developer" />
+    <meta property="og:description" content="Web apps and business websites built with React, Node.js and MongoDB." />
     <meta property="og:type" content="website" />
 
-    <!-- Google Fonts Preload -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-
-    <style>
-      /* Prevent Flash of Unstyled Content */
-      body { background: #050510; }
-    </style>
+    <script>
+      // Set the theme before first paint so the page never flashes.
+      (function () {
+        var saved = null;
+        try { saved = localStorage.getItem("theme"); } catch (e) {}
+        var dark = saved ? saved === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme = dark ? "dark" : "light";
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
