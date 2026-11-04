@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import emailjs from "@emailjs/browser";
 import { Check, Copy } from "lucide-react";
-import { LEAD_FORM, PROFILE, SHEET_URL, SOCIALS } from "../data/portfolio";
+import { LEAD_FORM, PROFILE, SOCIALS } from "../data/portfolio";
+import { deliverLead } from "../data/leads";
 
 const EMPTY = {
   fullName: "",
@@ -14,44 +14,6 @@ const EMPTY = {
   budget: "",
   website: "", // Hidden from people. Only bots fill it.
 };
-
-async function saveToSheet(lead) {
-  // A form-encoded body avoids the CORS preflight that Apps Script cannot answer.
-  const response = await fetch(SHEET_URL, { method: "POST", body: new URLSearchParams(lead) });
-  const result = await response.json();
-  if (!result.ok) throw new Error(result.error || "Sheet rejected the lead");
-}
-
-function sendEmail(lead) {
-  const message = [
-    `WhatsApp: ${lead.whatsapp}`,
-    `Service: ${lead.service}`,
-    `Work type: ${lead.workType}`,
-    `Timeline: ${lead.timeline || "Not given"}`,
-    `Budget: ${lead.budget || "Not given"}`,
-    "",
-    lead.details,
-  ].join("\n");
-  return emailjs.send(
-    "service_k41rw8n",
-    "template_z8lzzm8",
-    { name: lead.fullName, email: lead.email, subject: `${lead.service} (${lead.workType})`, message },
-    "gEoYwkl8lrQ1Tekau"
-  );
-}
-
-// The sheet script saves the lead and emails you. EmailJS is the backup if it fails.
-async function deliverLead(lead) {
-  if (SHEET_URL) {
-    try {
-      await saveToSheet(lead);
-      return;
-    } catch (error) {
-      console.warn("Sheet unavailable, sending by EmailJS:", error);
-    }
-  }
-  await sendEmail(lead);
-}
 
 function Select({ id, label, value, onChange, placeholder, required, children }) {
   return (

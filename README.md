@@ -56,3 +56,7 @@ The Apps Script saves each lead in your Google Sheet and emails you the details.
 4. Paste the Web app URL into `SHEET_URL` in `src/data/portfolio.js`.
 
 Form dropdown options live in `LEAD_FORM` in the same file.
+
+## Chatbot
+
+The chat button lives in `src/components/ChatBot.jsx`. Edit its text, menu, common questions, service keywords and WhatsApp number in `src/data/chatbot.js`. Leads reach the same Google Sheet with `Chatbot` in the Source column. To turn it off, remove `<ChatBot />` from `src/App.jsx`.

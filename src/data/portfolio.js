@@ -13,7 +13,7 @@ export const PROFILE = {
   name: "Arjun Maurya",
   role: "MERN full stack developer",
   location: "Gurugram, India",
-  experience: "1+ year",
+  experience: "1.5+ years",
   email: "dev.arjunmaurya@gmail.com",
   resume: "/Arjun_maurya.pdf",
   available: true,

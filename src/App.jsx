@@ -13,6 +13,7 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import CommandPalette from "./components/CommandPalette";
 import IntroGate from "./components/IntroGate";
+import ChatBot from "./components/ChatBot";
 import MoneyTrail from "./components/MoneyTrail";
 
 function useTheme() {
@@ -117,6 +118,8 @@ export default function App() {
       </div>
 
       <MobileBar active={active} onSearch={openPalette} />
+
+      <ChatBot />
 
       {project && (
         <ProjectDrawer project={project} onChange={setProjectId} onClose={() => setProjectId(null)} />
